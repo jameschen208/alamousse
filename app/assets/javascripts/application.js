@@ -11,12 +11,15 @@
 // about supported directives.
 //
 //= require jquery
+//= require materialize-sprockets
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
 
 $(document).ready(function(){
-    $('.parallax').parallax();
     $('.modal-trigger').leanModal();
-    $('.slider').slider({full_width: true});
+    $('.parallax').parallax();
+    $('.slider').slider({indicators: false});
+    $('.carousel').carousel();
+
   });

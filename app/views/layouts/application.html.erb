@@ -10,8 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
 </head>
 <body>
   <div class="navbar-fixed">
@@ -33,7 +33,7 @@
   </div>
 
 <!-- PARALLAX 1 -->
-	<div id="index-banner" class="parallax-container">
+	<div id="index-banner" class="gray-foreground parallax-container">
 		<div class="section no-pad-bot">
 			<div class="intro container">
 				<br><br>
@@ -41,7 +41,7 @@
         <br>
         <div class="container">
   				<div class="row center">
-  					<h5 class="header col s12 light outline-text white-text">A dessert place in Philly like no other! Home to a large selection of delicious desserts made with healthy and natural ingredients!</h5>
+  					<h4 class="header col s12 light outline-text white-text">A dessert place in Philly like no other! Home to a large selection of delicious desserts made with healthy and natural ingredients!</h4>
   				</div>
         </div>
 			</div>
@@ -51,101 +51,121 @@
 
 	<div class="container">
     <div class="section">
-      <h1 class="header center">About Tu's</h1>
-<!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">What functionality does this site need?</h5>
-
-            <p class="light">Google Maps location. Menu. Yelp Feed.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Column 2</h5>
-
-            <p class="light">Quinoa polaroid bushwick listicle put a bird on it. Migas disrupt readymade jean shorts intelligentsia, cardigan four loko stumptown blog actually trust fund hoodie ennui. Swag food truck beard deep v brunch, banh mi pop-up.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">email</i></h2>
-            <h5 class="center">Contact Us</h5>
-
-            <p class="light">Small batch taxidermy migas art party, microdosing yr lomo jean shorts mlkshk etsy heirloom +1 DIY.</p>
-          </div>
-        </div>
-
+        <h4 class="header center">About</h4>
+        <h1 class="header center">A La Mousse</h1>
       </div>
-
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel brown">
+            <h5 class="white-text">A dessert place like no other, home to a large selection of tasty flavors, made with healthy and natural ingredients like <span class="matcha-text">Matcha, green tea</span>.</h5>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel brown">
+            <h5 class="white-text">At A La Mousse, traditional confections are re-imagined and spiked with a novel Asian flare. We look forward to feeding you at your next gathering.</h5>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
 <!-- PHOTO GALLERY -->
   <div class="slider">
-    <ul class="slides">
+    <ul class="slides gray-foreground">
       <li>
-        <img src="https://placeimg.com/1280/480/any"> <!-- random image -->
+        <img src="/slider1.jpeg">
         <div class="caption center-align">
-          <h3>Bahn Mi Up Scotty!</h3>
-          <h5 class="light grey-text text-lighten-3">Pew Pew</h5>
+          <h3 class="outline-text">Bahn Mi Up Scotty!</h3>
+          <h5 class="light grey-text outline-text text-lighten-3">I need pictures shot horizontally</h5>
         </div>
       </li>
       <li>
-        <img src="https://placeimg.com/1280/480/animals"> <!-- random image -->
+        <img src="/slider2.jpeg"> <!-- random image -->
         <div class="caption left-align">
-          <h3>Bahn Mi Bahn Mi Baby</h3>
-          <h5 class="light grey-text text-lighten-3">Need Pictures</h5>
+          <h3 class="outline-text">Bahn Mi Bahn Mi Baby</h3>
+          <h5 class="light grey-text outline-text text-lighten-3">iPhone 6 camera is perfectly acceptable for our current browsers</h5>
         </div>
       </li>
       <li>
-        <img src="https://placeimg.com/1280/480/nature"> <!-- random image -->
+        <img src="/mousse1.jpeg"> <!-- random image -->
         <div class="caption right-align">
-          <h3>HD pictures please</h3>
-          <h5 class="light grey-text text-lighten-3">Give me the Highest Def you can.</h5>
+          <h3 class="outline-text">HD pictures please</h3>
+          <h5 class="light grey-text outline-text text-lighten-3">Give me the Highest Def you can.</h5>
         </div>
       </li>
     </ul>
+  </div>
+<!-- MENU MODALS -->
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <h1 class="header center">Menu</h1>
+        <h5>Currently, I just linked the menus you gave me as a popup. I can display your menu items in a different manner rather than those images if you'd like.</h5>
+      </div>
+      <div class="row">
+        <!-- Modal Trigger -->
+        <div class="col s12 m6">
+          <div class="card-panel matcha">
+            <a class="waves-effect waves-light matcha darken-1 modal-trigger" href="#modal1"><h1 class="white-text center">Seasonal Desserts</h1></a>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel matcha">
+            <a class="waves-effect waves-light matcha modal-trigger" href="#modal2"><h1 class="white-text center">Delicious Refreshments</h1></a>
+          </div>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <img class="modal-img"src="/menu1.jpeg" alt="menu1">
+          </div>
+        </div>
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <img class="modal-img"src="/menu2.jpeg" alt="menu1">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="container">
     <div class="section">
       <div class="row">
-        <h1 class="header center">Menu</h1>
-
-        <table class="highlight bordered">
-          <thead>
-            <tr>
-              <th data-field="id">Name</th>
-              <th data-field="name">Description</th>
-              <th data-field="price">Item Price</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>Vietnamese Traditional</td>
-              <td>Description</td>
-              <td>$3.75</td>
-            </tr>
-            <tr>
-              <td>Cha</td>
-              <td>Description</td>
-              <td>$3.75</td>
-            </tr>
-            <tr>
-              <td>BBQ Chicken</td>
-              <td>Description</td>
-              <td>$4.00</td>
-            </tr>
-          </tbody>
-        </table>
-
+        <h1 class="header center">Contact A La Mousse</h1>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <table>
+            <tbody>
+              <tr>
+                <td><h3>Phone:</h3></td>
+                <td><h5>(215)238-9100</h5></td>
+              </tr>
+              <tr>
+                <td><h3>Email:</h3></td>
+                <td><h5>ALaMoussePhilly<br>@gmail.com</h5></td>
+              </tr>
+              <tr>
+                <td><h3>Mon-Thu:</h3></td>
+                <td><h5>11:00am-11:00pm</h5></td>
+              </tr>
+              <tr>
+                <td><h3>Fri-Sat:</h3></td>
+                <td><h5>11:00am-12:00am</h5></td>
+              </tr>
+              <tr>
+                <td><h3>Sun:</h3></td>
+                <td><h5>11:00am-10:00pm</h5></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col s12 m6">
+          <h3 class="center">Our Location</h3>
+          <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.379651197924!2d-75.15951404949448!3d39.95526377932041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c62a51ef334b%3A0xefc2b5ac87a9cb36!2s145+N+11th+St%2C+Philadelphia%2C+PA+19107!5e0!3m2!1sen!2sus!4v1457927730575" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -163,14 +183,14 @@
         </div>
         <div class="col l4 offset-12 s-12">
           <h5 class="white-text">
-            Contact Info
+            Social Media Icons
           </h5>
         </div>
       </div>
     </div>
     <div class="footer-copyright brown">
       <div class="container">
-        © 2015 Copyright Text
+        © 2016 Copyright Text
       </div>
     </div>
   </footer>

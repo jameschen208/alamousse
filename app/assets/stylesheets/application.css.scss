@@ -13,21 +13,36 @@
  *= require_tree .
  *= require_self
  */
- @import "materialize";
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
+@import "materialize";
+$matcha: #6EB304;
+$vanilla: #F4ED7B;
+body{
+  font-family: 'Satisfy', cursive;
+}
+h4,h5{
+  font-family: 'Lato', sans-serif;
+}
 
- $vanilla: #F4ED7B;
 .vanilla{
-  background-color: #F4ED7B;
+  background-color: $vanilla;
 }
 .vanilla-text{
-  color: #F4ED7B
+  color: $vanilla;
+}
+.matcha{
+  background-color: $matcha;
+}
+.matcha-text{
+  color: $matcha;
 }
 .outline-text{
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
- #index-banner{
- 	background: rgba(0,0,0,0.1)
+ .gray-foureground{
+ 	background: rgba(0,0,0,0.2)
  }
 .logo{
   height: 100px;
@@ -54,4 +69,18 @@ nav{
   display: inline;
   width: auto;
   height: auto;
+}
+.modal{
+  max-height: 90%;
+  max-width: 90%;
+  min-width: 90%;
+  top: 2.5% !important;
+}
+.modal-img{
+  width: 100%;
+}
+
+#gmap{
+  max-width: 100%;
+  min-width: 100%;
 }
