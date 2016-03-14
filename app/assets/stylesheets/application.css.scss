@@ -1,0 +1,57 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "materialize";
+
+ $vanilla: #F4ED7B;
+.vanilla{
+  background-color: #F4ED7B;
+}
+.vanilla-text{
+  color: #F4ED7B
+}
+.outline-text{
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+ #index-banner{
+ 	background: rgba(0,0,0,0.1)
+ }
+.logo{
+  height: 100px;
+  margin-top: 5px;
+}
+nav{
+  height: 100px;
+}
+.navbar-fixed{
+  height: 0;
+}
+.nav-elements{
+  margin-top: 20px;
+  padding-bottom: 18px;
+}
+.intro{
+  margin-top: 175px;
+}
+.parallax-container{
+  height: 900px;
+}
+#parallax-image{
+  max-width: 800px;
+  display: inline;
+  width: auto;
+  height: auto;
+}

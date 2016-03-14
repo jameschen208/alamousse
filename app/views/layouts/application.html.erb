@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A La Mousse</title>
+  <%= favicon_link_tag "icon.ico" %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <div class="navbar-fixed">
+  	<nav class="transparent z-depth-0" role="navigation">
+  		<div class="nav-wrapper container">
+  		  <a id="logo-container" href="#" class="center white-text brand-logo"><img class="logo" src="logo.png" alt=""></a>
+  		  <ul class="right hide-on-med-and-down">
+  		    <li><a href="#" class="nav-elements vanilla-text">About</a></li>
+          <li><a href="#" class="nav-elements vanilla-text">Menu</a></li>
+          <li><a href="#" class="nav-elements vanilla-text">Contact</a></li>
+  		  </ul>
+
+  		  <ul id="nav-mobile" class="side-nav">
+  		    <li><a href="#">About</a></li>
+  		  </ul>
+  		  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  		</div>
+  	</nav>
+  </div>
+
+<!-- PARALLAX 1 -->
+	<div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot">
+			<div class="intro container">
+				<br><br>
+				<h1 class="header center outline-text white-text">A La Mousse</h1>
+        <br>
+        <div class="container">
+  				<div class="row center">
+  					<h5 class="header col s12 light outline-text white-text">A dessert place in Philly like no other! Home to a large selection of delicious desserts made with healthy and natural ingredients!</h5>
+  				</div>
+        </div>
+			</div>
+		</div>
+		<div class="parallax"><img id="parallax-image" src="/mousse1.jpeg" alt="Unsplashed background img 1"></div>
+	</div>
+
+	<div class="container">
+    <div class="section">
+      <h1 class="header center">About Tu's</h1>
+<!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">What functionality does this site need?</h5>
+
+            <p class="light">Google Maps location. Menu. Yelp Feed.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Column 2</h5>
+
+            <p class="light">Quinoa polaroid bushwick listicle put a bird on it. Migas disrupt readymade jean shorts intelligentsia, cardigan four loko stumptown blog actually trust fund hoodie ennui. Swag food truck beard deep v brunch, banh mi pop-up.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">email</i></h2>
+            <h5 class="center">Contact Us</h5>
+
+            <p class="light">Small batch taxidermy migas art party, microdosing yr lomo jean shorts mlkshk etsy heirloom +1 DIY.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+<!-- PHOTO GALLERY -->
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://placeimg.com/1280/480/any"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Bahn Mi Up Scotty!</h3>
+          <h5 class="light grey-text text-lighten-3">Pew Pew</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://placeimg.com/1280/480/animals"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Bahn Mi Bahn Mi Baby</h3>
+          <h5 class="light grey-text text-lighten-3">Need Pictures</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://placeimg.com/1280/480/nature"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>HD pictures please</h3>
+          <h5 class="light grey-text text-lighten-3">Give me the Highest Def you can.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <h1 class="header center">Menu</h1>
+
+        <table class="highlight bordered">
+          <thead>
+            <tr>
+              <th data-field="id">Name</th>
+              <th data-field="name">Description</th>
+              <th data-field="price">Item Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Vietnamese Traditional</td>
+              <td>Description</td>
+              <td>$3.75</td>
+            </tr>
+            <tr>
+              <td>Cha</td>
+              <td>Description</td>
+              <td>$3.75</td>
+            </tr>
+            <tr>
+              <td>BBQ Chicken</td>
+              <td>Description</td>
+              <td>$4.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+
+<%= yield %>
+
+  <footer class="page-footer brown">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">
+            Footer Content
+          </h5>
+        </div>
+        <div class="col l4 offset-12 s-12">
+          <h5 class="white-text">
+            Contact Info
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright brown">
+      <div class="container">
+        © 2015 Copyright Text
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
