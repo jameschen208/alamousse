@@ -14,17 +14,20 @@
  *= require_self
  */
 @import url(https://fonts.googleapis.com/css?family=Satisfy);
-@import url(https://fonts.googleapis.com/css?family=Lato:400);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:500);
 @import "materialize";
 $matcha: #6EB304;
 $vanilla: #F4ED7B;
+$transgray: rgba(158, 158, 158, .5);
 body{
   font-family: 'Satisfy', cursive;
 }
 h4,h5{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
-
+.transgray{
+  background-color: $transgray;
+}
 .vanilla{
   background-color: $vanilla;
 }
@@ -38,7 +41,7 @@ h4,h5{
   color: $matcha;
 }
 .outline-text{
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  text-shadow: 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
 }
 
  .gray-foureground{
@@ -83,4 +86,11 @@ nav{
 #gmap{
   max-width: 100%;
   min-width: 100%;
+}
+i{
+  color: white;
+  transform: translateY(20px);
+}
+.copy{
+  transform: translateY(-10px);
 }
