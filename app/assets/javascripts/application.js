@@ -21,5 +21,5 @@ $(document).ready(function(){
     $('.parallax').parallax();
     $('.slider').slider({indicators: false});
     $('.carousel').carousel();
-
+    $('.materialboxed').materialbox();
   });

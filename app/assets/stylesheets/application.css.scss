@@ -19,10 +19,10 @@
 $matcha: #6EB304;
 $vanilla: #F4ED7B;
 $transgray: rgba(158, 158, 158, .5);
-body{
+body th{
   font-family: 'Satisfy', cursive;
 }
-h4,h5{
+td,li,h4,h5{
   font-family: 'Alegreya Sans', sans-serif;
 }
 .transgray{
@@ -44,7 +44,7 @@ h4,h5{
   text-shadow: 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
 }
 
- .gray-foureground{
+.gray-foreground{
  	background: rgba(0,0,0,0.2)
  }
 .logo{
@@ -61,11 +61,15 @@ nav{
   margin-top: 20px;
   padding-bottom: 18px;
 }
+nav ul a{
+  font-size: 1.5em;
+  font-family: 'Satisfy', cursive;
+}
 .intro{
   margin-top: 175px;
 }
 .parallax-container{
-  height: 900px;
+  height: 700px;
 }
 #parallax-image{
   max-width: 800px;
@@ -73,24 +77,33 @@ nav{
   width: auto;
   height: auto;
 }
-.modal{
-  max-height: 90%;
-  max-width: 90%;
-  min-width: 90%;
-  top: 2.5% !important;
+.slider .slides{
+  height: 600px !important;
 }
-.modal-img{
-  width: 100%;
+.slider-img{
+  // max-width: 800px;
+  display: inline;
+  width: auto;
+  height: auto;
 }
-
+.slider .slides li img{
+  background-position: bottom;
+}
+.break{
+  height: 200px;
+}
 #gmap{
   max-width: 100%;
   min-width: 100%;
 }
-i{
+.smedia  {
   color: white;
   transform: translateY(20px);
 }
 .copy{
   transform: translateY(-10px);
+}
+
+.materialboxed{
+margin: 0 auto;
 }

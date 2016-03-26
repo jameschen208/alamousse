@@ -36,7 +36,7 @@
 	<div id="index-banner" class="gray-foreground parallax-container">
 		<div class="section no-pad-bot">
 			<div class="intro container">
-				<br><br>
+
 				<h1 class="header center outline-text white-text">A La Mousse</h1>
         <br>
         <div class="container">
@@ -46,7 +46,7 @@
         </div>
 			</div>
 		</div>
-		<div class="parallax"><img id="parallax-image" src="/mousse1.jpeg" alt="Unsplashed background img 1"></div>
+		<div class="parallax"><img id="parallax-image" src="/mousse.jpeg" alt="Unsplashed background img 1"></div>
 	</div>
 
 	<div class="container">
@@ -56,17 +56,30 @@
         <h1 class="header center">A La Mousse</h1>
       </div>
       <div class="row">
-        <div class="col s12 m8">
-          <div class="card-panel brown">
-            <h5 class="white-text">A dessert place like no other, home to a large selection of tasty flavors, made with healthy and natural ingredients like <span class="matcha-text">Matcha, green tea</span>.</h5>
-          </div>
+        <div class="card col s12 m6">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="mousse10.jpeg">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">Who We Are<i class="material-icons right">more_vert</i></span>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Who We Are<i class="material-icons right">close</i></span>
+             <h5>At A La Mousse, traditional confections are re-imagined and spiked with a novel Asian flare. We look forward to feeding you at your next gathering.</h5>
+           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m8 offset-s4">
-          <div class="card-panel brown">
-            <h5 class="white-text">At A La Mousse, traditional confections are re-imagined and spiked with a novel Asian flare. We look forward to feeding you at your next gathering.</h5>
-          </div>
+
+        <div class="card col s12 m6">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="mousse11.jpeg">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">Our Ingredients<i class="material-icons right">more_vert</i></span>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Our Ingredients<i class="material-icons right">close</i></span>
+             <h5>A dessert place like no other, home to a large selection of tasty flavors, made with healthy and natural ingredients like <span class="matcha-text">Matcha, green tea</span>.</h5>
+           </div>
         </div>
       </div>
     </div>
@@ -76,62 +89,335 @@
   <div class="slider">
     <ul class="slides gray-foreground">
       <li>
-        <img src="/slider1.jpeg">
-        <div class="caption center-align">
+        <img src="/mousse1.jpeg" class="slider-img">
+        <!-- <div class="caption center-align">
           <h3 class="outline-text white-text">Bahn Mi Up Scotty!</h3>
           <h5 class="light white-text outline-text text-lighten-3">I need pictures shot horizontally</h5>
-        </div>
+        </div> -->
       </li>
       <li>
-        <img src="/slider2.jpeg"> <!-- random image -->
-        <div class="caption left-align">
+        <img src="/mousse6.jpeg" class="slider-img">
+        <!-- <div class="caption left-align">
           <h3 class="outline-text white-text">Bahn Mi Bahn Mi Baby</h3>
           <h5 class="light white-text outline-text text-lighten-3">iPhone 6 camera is perfectly acceptable for our current browsers</h5>
-        </div>
+        </div> -->
       </li>
       <li>
-        <img src="/mousse1.jpeg"> <!-- random image -->
-        <div class="caption right-align">
+        <img src="/mousse4.jpeg" class="slider-img">
+        <!-- <div class="caption right-align">
           <h3 class="white-text outline-text">HD pictures please</h3>
           <h5 class="light white-text outline-text text-lighten-3">Give me the Highest Def you can.</h5>
-        </div>
+        </div> -->
       </li>
     </ul>
   </div>
-<!-- MENU MODALS -->
+<div class="break"></div>
+<!-- MENU ACCORDIONS -->
   <div class="container">
     <div class="section">
-      <div class="row">
-        <h1 class="header center">Menu</h1>
-        <h5>Currently, I just linked the menus you gave me as a popup. I can display your menu items in a different manner rather than those images if you'd like.</h5>
-      </div>
-      <div class="row">
-        <!-- Modal Trigger -->
-        <div class="col s12 m6">
-          <div class="card-panel matcha">
-            <a class="waves-effect waves-light matcha darken-1 modal-trigger" href="#modal1"><h1 class="white-text center">Seasonal Desserts</h1></a>
+      <h1 class="header center">Menu</h1>
+      <ul class="collapsible popout" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="fa fa-coffee"></i>Coffee<i class="material-icons right">more_vert</i></div>
+          <div class="collapsible-body">
+            <table class="container">
+              <thead>
+                <tr>
+                    <th>Hot Coffee</th>
+                    <th></th>
+                    <th>Cold Coffee</th>
+                    <th></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Drip Coffee</td>
+                  <td>2.25</td>
+                  <td>Iced Coffee</td>
+                  <td>2.75</td>
+                </tr>
+                <tr>
+                  <td>Single Shot Espresso</td>
+                  <td>2.25</td>
+                  <td>Iced Caramel Macchiato</td>
+                  <td>4.25</td>
+                </tr>
+                <tr>
+                  <td>Double Shot Espresso</td>
+                  <td>3.00</td>
+                  <td>Iced Caffe Latte</td>
+                  <td>4.25</td>
+                </tr>
+                <tr>
+                  <td>Caramel Espresso Macchiato</td>
+                  <td>4.00</td>
+                  <td>Iced Vanilla Latte</td>
+                  <td>4.25</td>
+                </tr>
+                <tr>
+                  <td>Espresso Latte</td>
+                  <td>4.00</td>
+                  <td>Iced White Chocolate Vanilla Latte</td>
+                  <td>4.50</td>
+                </tr>
+                <tr>
+                  <td>Vanilla Latte</td>
+                  <td>4.00</td>
+                  <td>Iced Tres Leches Latte</td>
+                  <td>4.50</td>
+                </tr>
+                <tr>
+                  <td>White Chocolate Vanilla Latte</td>
+                  <td>4.25</td>
+                  <td>Iced Pistachio Latte</td>
+                  <td>4.50</td>
+                </tr>
+                <tr>
+                  <td>Pistachio</td>
+                  <td>4.25</td>
+                  <td>Iced Mocha Latte</td>
+                  <td>3.75</td>
+                </tr>
+                <tr>
+                  <td>Hazelnut Latte</td>
+                  <td>4.00</td>
+                  <td>Iced Americano</td>
+                  <td>4.25</td>
+                </tr>
+                <tr>
+                  <td>Cafe Mocha</td>
+                  <td>4.00</td>
+                  <td>Affogato</td>
+                  <td>4.50</td>
+                </tr>
+                <tr>
+                  <td>Cappucino</td>
+                  <td>4.00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Americano</td>
+                  <td>3.50</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card-panel matcha">
-            <a class="waves-effect waves-light matcha modal-trigger" href="#modal2"><h1 class="white-text center">Delicious Refreshments</h1></a>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="fa fa-coffee"></i>Tea<i class="material-icons right">more_vert</i></div>
+          <div class="collapsible-body">
+            <table class="container">
+              <thead>
+                <tr>
+                    <th>Fruit Tea</th>
+                    <th></th>
+                    <th>Foamy Milk Tea</th>
+                    <th></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Lemonade Mint Tea</td>
+                  <td>3.25</td>
+                  <td>Bubble Milk Foam Black Tea</td>
+                  <td>3.50</td>
+                </tr>
+                <tr>
+                  <td>Pomegranate Strawberry Lemonade</td>
+                  <td>3.25</td>
+                  <td>Bubble Milk Foam Green Tea</td>
+                  <td>3.50</td>
+                </tr>
+                <tr>
+                  <td>Mango Fruit Tea</td>
+                  <td>3.25</td>
+                  <td>Oolong Tea</td>
+                  <td>3.50</td>
+                </tr>
+                <tr>
+                  <td>Peach Guava Fruit Tea</td>
+                  <td>3.25</td>
+                  <td>Bubble Milk Foam Rose Black Tea</td>
+                  <td>3.75</td>
+                </tr>
+                <tr>
+                  <td>Green Apple Strawberry Fruit Tea</td>
+                  <td>3.25</td>
+                  <td>Bubble Milk Foam Matcha Tea</td>
+                  <td>3.75</td>
+                </tr>
+                <tr>
+                  <td>Raspberry Pear Fruit Tea</td>
+                  <td>3.25</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Lychee Pineapple Fruit Tea</td>
+                  <td>3.25</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="container">
+              <thead>
+                <tr>
+                    <th>Matcha</th>
+                    <th></th>
+                    <th>Smoothies</th>
+                    <th></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Green Foam Matcha Tea</td>
+                  <td>3.25</td>
+                  <td>Passion Island (avocado & berries)</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>Matcha Latte</td>
+                  <td>3.50</td>
+                  <td>Mint Sizzle (avocado, pear & mint)</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>Iced Matcha Coconut Latte</td>
+                  <td>3.75</td>
+                  <td>Tropical Blend (lychee, kiwi & berries)</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>Iced Matcha Chocolate Latte</td>
+                  <td>3.75</td>
+                  <td>Red Twister (apple, lychee & berries)</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>Iced Matcha Latte</td>
+                  <td>3.75</td>
+                  <td>Tango Orange (tango, orange & banana)</td>
+                  <td>4.00</td>
+                </tr>
+                <tr>
+                  <td>Matcha Frappe</td>
+                  <td>4.00</td>
+                  <td>Crunch Sweet (pineapple, banana & berries)</td>
+                  <td>4.00</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-        <!-- Modal Structure -->
-        <div id="modal1" class="modal">
-          <div class="modal-content">
-            <img class="modal-img"src="/menu1.jpeg" alt="menu1">
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="fa fa-cutlery"></i>Seasonal Desserts<i class="material-icons right">more_vert</i></div>
+          <div class="collapsible-body">
+            <div class="container">
+              <div class="row">
+                <div class="col s12 m6">
+                  <div class="card matcha">
+                    <div class="card-content white-text">
+                      <span class="card-title">The Harvest</span>
+                      <p>Layers of berries, soft cream cheese and yogurt topped with oreo crumbs
+                      served with a delectable raspberry sorbet.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                  <div class="card matcha">
+                    <div class="card-content white-text">
+                      <span class="card-title">Green Forest</span>
+                      <p>Pistachio and apricot crumb covered chocolate mousse
+                      served with creamy pistachio ice-cream.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col s12 m6">
+                  <div class="card matcha">
+                    <div class="card-content white-text">
+                      <span class="card-title">Triple Chocolate Mousse Cake</span>
+                      <p>Layers of flourless dark chocolate cake, milk chocolate and
+                      light white chocolate mousse served wtih mango ice cream.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                  <div class="card matcha">
+                    <div class="card-content white-text">
+                      <span class="card-title">Matcha Mousse Cake</span>
+                      <p>Matcha mousse cake served with matcha ice cream and vanilla crunches.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col s12 m6">
+                  <div class="card matcha">
+                    <div class="card-content white-text">
+                      <span class="card-title">Lychee Panna Cotta</span>
+                      <p>Lychee panna cotta with raspberry sauce served with raspberry truffle ice cream.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                  <div class="card matcha">
+                    <div class="card-content white-text">
+                      <span class="card-title">Tofu Kasuteri Cheesecake</span>
+                      <p>Tofu cheesecake, chocolate ganache served with fresh strawberries and chocolate pearls.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col s12 m6">
+                  <div class="card matcha">
+                    <div class="card-content white-text">
+                      <span class="card-title">Green Tea-r-amisu</span>
+                      <p>Layers of green tea mascarpone cream and green tea sponge cake.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                  <div class="card matcha">
+                    <div class="card-content white-text">
+                      <span class="card-title">Sizzling Ice Cream</span>
+                      <p>Matcha brownie with a scoop of ice cream on the top served with matcha sauce.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div id="modal2" class="modal">
-          <div class="modal-content">
-            <img class="modal-img"src="/menu2.jpeg" alt="menu1">
-          </div>
-        </div>
-      </div>
+        </li>
+        <!-- <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third<i class="material-icons right">more_vert</i></div>
+          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li> -->
+      </ul>
     </div>
   </div>
-
+  <div class="container">
+    <div class="center">
+      <img class="materialboxed" width="650" src="mousse8.jpeg">
+    </div>
+  </div>
+<!-- CONTACT -->
   <div class="container">
     <div class="section">
       <div class="row">
@@ -180,9 +466,9 @@
       <div class="row">
         <div class=" col s-12">
           <h5 class="white-text">
-            <a href="https://www.facebook.com/alamoussecafe/?fref=ts" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
-            <a href="https://www.instagram.com/alamousse/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-            <a href="http://www.yelp.com/biz/a-la-mousse-philadelphia" target="_blank"><i class="fa fa-yelp fa-2x"></i></a>
+            <a href="https://www.facebook.com/alamoussecafe/?fref=ts" target="_blank"><i class="smedia fa fa-facebook-official fa-2x"></i></a>
+            <a href="https://www.instagram.com/alamousse/" target="_blank"><i class="smedia fa fa-instagram fa-2x"></i></a>
+            <a href="http://www.yelp.com/biz/a-la-mousse-philadelphia" target="_blank"><i class="smedia fa fa-yelp fa-2x"></i></a>
           </h5>
         </div>
       </div>
