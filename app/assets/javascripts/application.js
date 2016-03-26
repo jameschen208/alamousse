@@ -17,9 +17,35 @@
 //= require_tree .
 
 $(document).ready(function(){
+// MATERIALIZE JS
     $('.modal-trigger').leanModal();
     $('.parallax').parallax();
     $('.slider').slider({indicators: false});
     $('.carousel').carousel();
     $('.materialboxed').materialbox();
+    $(".button-collapse").sideNav();
+
+// SMOOTH SCROLL
+$(".brand-logo").click(function() {
+  $('html,body').animate({
+      scrollTop: target.offset().top},
+       'slow');
   });
+  $(".about-nav").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#about").offset().top},
+          'slow');
+  });
+
+  $(".menu-nav").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#menu").offset().top},
+          'slow');
+  });
+
+  $(".contact-nav").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#contact").offset().top},
+          'slow');
+  });
+});

@@ -26,21 +26,25 @@
   <div class="navbar-fixed">
   	<nav class="transparent z-depth-0" role="navigation">
   		<div class="nav-wrapper container">
-  		  <a id="logo-container" href="#" class="brand-logo"><img class="logo" src="logo.png" alt=""></a>
+  		  <a id="logo-container" href="#" class="home-nav hide-on-med-and-down"><img class="logo" src="logo.png" alt=""></a>
   		  <ul class="right hide-on-med-and-down">
-  		    <li><a href="#" class="nav-elements vanilla-text">About</a></li>
-          <li><a href="#" class="nav-elements vanilla-text">Menu</a></li>
-          <li><a href="#" class="nav-elements vanilla-text">Contact</a></li>
+  		    <li><a href="<%= root_path %>#about" class="nav-elements about-nav vanilla-text">About</a></li>
+          <li><a href="<%= root_path %>#menu" class="nav-elements menu-nav vanilla-text">Menu</a></li>
+          <li><a href="<%= root_path %>#contact" class="nav-elements contact-nav vanilla-text">Contact</a></li>
   		  </ul>
 
   		  <ul id="nav-mobile" class="side-nav">
-  		    <li><a href="#">About</a></li>
+          <li><a href="#" class="home-nav"><h3>Home</h3></a></li>
+          <li><a href="<%= root_path %>#about" class="about-nav"><h3>About</h3></a></li>
+  		    <li><a href="<%= root_path %>#menu" class="menu-nav"><h3>Menu</h3></a></li>
+          <li><a href="<%= root_path %>#contact" class="contact-nav"><h3>Contact</h3></a></li>
   		  </ul>
-  		  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  		  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="vanilla-text material-icons">menu</i></a>
   		</div>
   	</nav>
   </div>
-<!-- PARALLAX 1 -->
+
+<!-- HOME -->
 	<div id="index-banner" class="gray-foreground parallax-container">
 		<div class="section no-pad-bot">
 			<div class="intro container">
@@ -57,6 +61,8 @@
 		<div class="parallax"><img id="parallax-image" src="/mousse.jpeg" alt="Unsplashed background img 1"></div>
 	</div>
 
+<!-- ABOUT -->
+<span id="about"></span>
 	<div class="container">
     <div class="section">
       <div class="row">
@@ -93,7 +99,7 @@
     </div>
   </div>
 
-<!-- PHOTO GALLERY -->
+<!-- PHOTO SLIDER -->
   <div class="slider">
     <ul class="slides gray-foreground">
       <li>
@@ -120,7 +126,8 @@
     </ul>
   </div>
 <div class="break"></div>
-<!-- MENU ACCORDIONS -->
+<!-- MENU -->
+<span id="menu"></span>
   <div class="container">
     <div class="section">
       <h1 class="header center">Menu</h1>
@@ -330,84 +337,47 @@
           <div class="collapsible-body">
             <div class="container">
               <div class="row">
-                <div class="col s12 m6">
-                  <div class="card brown lighten-1">
-                    <div class="card-content white-text">
-                      <span class="card-title">The Harvest</span>
-                      <p>Layers of berries, soft cream cheese and yogurt topped with oreo crumbs
-                      served with a delectable raspberry sorbet.</p>
-                    </div>
-                  </div>
+                <div class="section">
+                  <h5>The Harvest</h5>
+                  <p>Layers of berries, soft cream cheese and yogurt topped with oreo crumbs
+                  served with a delectable raspberry sorbet.</p>
                 </div>
-                <div class="col s12 m6">
-                  <div class="card brown lighten-1">
-                    <div class="card-content white-text">
-                      <span class="card-title">Green Forest</span>
-                      <p>Pistachio and apricot crumb covered chocolate mousse
-                      served with creamy pistachio ice-cream.</p>
-                    </div>
-                  </div>
+                <div class="divider"></div>
+                <div class="section">
+                  <h5>Green Forest</h5>
+                  <p>Pistachio and apricot crumb covered chocolate mousse
+                  served with creamy pistachio ice-cream.</p>
                 </div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col s12 m6">
-                  <div class="card brown lighten-1">
-                    <div class="card-content white-text">
-                      <span class="card-title">Chocolate Mousse Cake</span>
-                      <p>Layers of flourless dark chocolate cake, milk chocolate and
-                      light white chocolate mousse served wtih mango ice cream.</p>
-                    </div>
-                  </div>
+                <div class="divider"></div>
+                <div class="section">
+                  <h5>Chocolate Mousse Cake</h5>
+                  <p>Layers of flourless dark chocolate cake, milk chocolate and
+                  light white chocolate mousse served wtih mango ice cream.</p>
                 </div>
-                <div class="col s12 m6">
-                  <div class="card brown lighten-1">
-                    <div class="card-content white-text">
-                      <span class="card-title">Matcha Mousse Cake</span>
-                      <p>Matcha mousse cake served with brown lighten-1 ice cream and vanilla crunches.</p>
-                    </div>
-                  </div>
+                <div class="divider"></div>
+                <div class="section">
+                  <h5>Matcha Mousse Cake</h5>
+                  <p>Matcha mousse cake served with matcha ice cream and vanilla crunches.</p>
                 </div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col s12 m6">
-                  <div class="card brown lighten-1">
-                    <div class="card-content white-text">
-                      <span class="card-title">Lychee Panna Cotta</span>
-                      <p>Lychee panna cotta with raspberry sauce served with raspberry truffle ice cream.</p>
-                    </div>
-                  </div>
+                <div class="divider"></div>
+                <div class="section">
+                  <h5>Lychee Panna Cotta</h5>
+                  <p>Lychee panna cotta with raspberry sauce served with raspberry truffle ice cream.</p>
                 </div>
-                <div class="col s12 m6">
-                  <div class="card brown lighten-1">
-                    <div class="card-content white-text">
-                      <span class="card-title">Tofu Kasuteri Cheesecake</span>
-                      <p>Tofu cheesecake, chocolate ganache served with fresh strawberries and chocolate pearls.</p>
-                    </div>
-                  </div>
+                <div class="divider"></div>
+                <div class="section">
+                  <h5>Tofu Kasuteri Cheesecake</h5>
+                  <p>Tofu cheesecake, chocolate ganache served with fresh strawberries and chocolate pearls.</p>
                 </div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col s12 m6">
-                  <div class="card brown lighten-1">
-                    <div class="card-content white-text">
-                      <span class="card-title">Green Tea-r-amisu</span>
-                      <p>Layers of green tea mascarpone cream and green tea sponge cake.</p>
-                    </div>
-                  </div>
+                <div class="divider"></div>
+                <div class="section">
+                  <h5>Green Tea-r-amisu</h5>
+                  <p>Layers of green tea mascarpone cream and green tea sponge cake.</p>
                 </div>
-                <div class="col s12 m6">
-                  <div class="card brown lighten-1">
-                    <div class="card-content white-text">
-                      <span class="card-title">Sizzling Ice Cream</span>
-                      <p>Matcha brownie with a scoop of ice cream on the top served with matcha sauce.</p>
-                    </div>
-                  </div>
+                <div class="divider"></div>
+                <div class="section">
+                  <h5>Sizzling Ice Cream</h5>
+                  <p>Matcha brownie with a scoop of ice cream on the top served with matcha sauce.</p>
                 </div>
               </div>
             </div>
@@ -425,6 +395,7 @@
     </div>
   </div>
 <!-- CONTACT -->
+<span id="contact"></span>
   <div class="container">
     <div class="section">
       <div class="row">
